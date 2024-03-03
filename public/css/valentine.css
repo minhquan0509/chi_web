@@ -59,3 +59,21 @@ img {
   border-radius: 50px;
   border: 5px solid #ff9494;
 }
+
+@media (max-width: 768px) {
+  .thumb {
+    height: 400px;
+  }
+  .thumb_img {
+    height: 300px;
+  }
+  #valentineQuestion,
+  .text,
+  #foodquestion {
+    font-size: 24px;
+  }
+
+  .suggestText {
+    max-width: 300px !important;
+  }
+}
