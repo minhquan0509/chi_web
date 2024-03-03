@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Của bé Chi</title>
+    <link rel="stylesheet" href="css/date.css" />
+    <link rel="stylesheet" href="css/valentine.css" />
+    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 title="choose a date">Em nhận lời rồi ấy nhó <br /></h1>
+      <form action="/date" method="post" class="form-group" id="dateForm">
+        <label>Chọn ngày em có thể đi với anh ở đâyy</label>
+        <div>
+          <input name="date" type="date" id="selectDate" /><br />
+          <button class="button" type="submit">Hẹn anh hôm nàyy</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      //   document.addEventListener("DOMContentLoaded", function () {
+      //     const form = document.getElementById("dateForm");
+      //     const selectedDateInput = document.getElementById("selectedDate");
+
+      //     handleSubmit = function (event) {
+      //       const selectedDate = selectedDateInput.value;
+
+      //       // Tạo yêu cầu POST
+      //       fetch("http://localhost:3000/date", {
+      //         method: "POST",
+      //         headers: {
+      //           "Content-Type": "application/json",
+      //         },
+      //         body: JSON.stringify({ date: selectedDate }), // Gửi ngày dưới dạng JSON
+      //       })
+      //         .then((response) => {
+      //           if (!response.ok) {
+      //             throw new Error("Network response was not ok");
+      //           }
+      //           return response.json();
+      //         })
+      //         // .then(data => {
+      //         //     console.log('Server response:', data);
+      //         //     // Xử lý phản hồi từ máy chủ nếu cần
+      //         // })
+      //         .catch((error) => {
+      //           console.error(
+      //             "There was a problem with your fetch operation:",
+      //             error
+      //           );
+      //         });
+      //     };
+      //     form.addEventListener("submit", handleSubmit);
+      // });
+    </script>
+  </body>
+</html>

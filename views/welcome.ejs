@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Của bé Chi</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon" />
+    <style>
+      .index {
+        margin-top: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="index">
+      <div id="valentineQuestion">
+        <b
+          >Sắp đến 8/3 rồi ý,<br />
+          could i take you on a date?</b
+        >
+      </div>
+      <button class="yesButton answerButton">
+        <a href="/date">Absolutely yess</a>
+      </button>
+      <button class="answerButton" id="noButton">Noo I don't want to</button>
+      <br />
+      <img src="/images/chi_xinh.jpg" alt="" class="responsive thumb_img" />
+
+      <script>
+        document
+          .getElementById("noButton")
+          .addEventListener("click", function () {
+            var yesButton = document.querySelector(".yesButton");
+            var currentFontSize = parseInt(
+              window.getComputedStyle(yesButton).fontSize
+            );
+            yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
+          });
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon" />
+    <style>
+      .suggestText {
+        padding: 12px;
+        font-size: 18px;
+        background-color: #e9b8a9;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="index">
+      <div id="valentineQuestion">
+        <b
+          >Hoặc bé có gợi ý thêm chỗ nào khôngg,<br />
+          viết vào đây nhó</b
+        >
+      </div>
+      <form action="/suggest" method="post" class="form-group" id="dateForm">
+        <textarea
+          name="suggests"
+          class="suggestText"
+          cols="80"
+          rows="2"
+        ></textarea
+        ><br />
+        <button class="answerButton" id="noButton" type="submit">
+          Em muốn chỗ nàyy
+        </button>
+      </form>
+      <br />
+      <img src="/images/chi_cafe.jpg" alt="" class="responsive thumb_img" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Của bé Chi</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon" />
+  </head>
+  <style>
+    #text {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    #nextBtn {
+      display: none; /* Ẩn button Next ban đầu */
+    }
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <div id="content">
+      <!-- Thẻ p -->
+      <p id="text" class="text">Hello bé Chi</p>
+      <!-- Button next -->
+      <button id="nextBtn" class="answerButton">
+        <a href="/welcome" class="btnText">Bấm vào đâyy</a>
+      </button>
+      <img src="/images/quacam.jpg" alt="" class="thumb" />
+    </div>
+    <script>
+      // Lấy thẻ p và button
+      const text = document.getElementById("text");
+      const nextBtn = document.getElementById("nextBtn");
+
+      const texts = [
+        "Hello bé Chi",
+        "Anh thấy em thích nên làm tặng em",
+        "Mong em thích nhó",
+      ];
+
+      let currentIndex = 0;
+      function changeText() {
+        text.style.opacity = 0;
+        setTimeout(() => {
+          text.textContent = texts[currentIndex];
+          text.style.opacity = 1;
+          if (currentIndex >= texts.length - 1) {
+            nextBtn.style.display = "block";
+          }
+        }, 500);
+      }
+
+      changeText();
+
+      window.addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex < texts.length) {
+          nextBtn.style.display = "none";
+          changeText();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Của bé Chi</title>
+    <link rel="stylesheet" href="css/food.css" />
+    <link rel="stylesheet" href="css/valentine.css" />
+    <link rel="icon" href="/images/favicon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="foodquestion">
+      <b> Em muốn mình ăn gì hôm ý nhò</b>
+      <h5>*chọn nhiều cũng đượcc</h5>
+    </div>
+    <form action="/food" method="post" class="form-group" id="dateForm">
+      <div class="food-selection">
+        <div class="food-item">
+          <img src="food/king-bbq.jpeg" alt="" />
+          <label
+            ><input type="checkbox" name="foods" value="nuong" /> Nướng</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/koreanfood.jpeg" alt="koreanfood" />
+          <label
+            ><input type="checkbox" name="foods" value="Korean food" /> Đồ
+            Hàn</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/pizza-4p-1.jpg" alt="pizza" />
+          <label
+            ><input type="checkbox" name="foods" value="pizza" /> pizza</label
+          >
+        </div>
+        <br />
+        <div class="food-item">
+          <img src="food/chi_hotpot.png" alt="salad" />
+          <label
+            ><input type="checkbox" name="foods" value="hotpot" /> Lẩuu</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/lemonde_steak.jpg" alt="steak" />
+          <label
+            ><input type="checkbox" name="foods" value="steak" /> steak</label
+          >
+        </div>
+        <div class="food-item">
+          <img src="food/sushi.jpeg" alt="sushi" />
+          <label
+            ><input type="checkbox" name="foods" value="Japanese food" /> Đồ
+            Nhật</label
+          >
+        </div>
+      </div>
+      <button class="button" type="submit">Em thích ăn cái này ạa</button>
+    </form>
+  </body>
+</html>
